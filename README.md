@@ -9,18 +9,27 @@ The repository includes data and R scripts used to build [Hierarchical Models of
 
 The following datasets are included:
 
+**final_model_coraldata.csv**  
+Occurrences (presence/absence) of 30 coral genera in the study area
+
+**final_model_envdata**  
+Environmental variables in grid cells with coral occurrences
+
+**fomal_model_expdes**  
+Sampling design. Includes information for SurveyID, Dive, Lat, Lon for each grid cell with coral occurrences
+
+**final_model_trdata**  
+Trait data for 30 coral genera
+
 **4model_data_1km.Rdata**  
-This is the curated dataset used to build the models. Includes the following vectors:
-  - model_cordat: occurrences (presence/absence) of 30 coral genera in the study area
-  - model_envdat: environmental variables in grid cells with coral occurrences
-  - model_expdes: sampling design. Includes information for SurveyID, Dive, Lat, Lon for each grid cell with coral occurrences
+This is an R dataset that includes all the above.
 
 **AxesTraits_1km.csv**  
 Dataset created from the first Script S1. Includes the position of each coral genus in the three axes that describe the three-dimensional trait space
 
 **Folder _misc_**: includes miscellaneous files that are needed for creating figures and maps
   - **Data_for_spatial_extrapolation.RData**  
-Includes environmental variables, sampling effort and Lon/Lat for every grid cell in the   study area
+Includes environmental variables, sampling effort and Lon/Lat for every grid cell in the study area
   - **all_wc_quadrat_data.csv**  
 Includes data of potential temperature and salinity for the whole water column above grid cells with coral occurrences. The data were obtained from the model fvcom 
   - **depth.grd** and **depth.gri**  
