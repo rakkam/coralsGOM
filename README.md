@@ -1,7 +1,7 @@
 # coralsGOM
 
 This page includes the data and code for the manuscript:  
-"Ocean circulation drives zonation of deep-water coral communities and their traits in the Northwest Atlantic"
+"Ocean circulation drives zonation of deep-water coral communities and their traits in the Northwest Atlantic" which is in submission
 
 The repository includes data and R scripts used to build [Hierarchical Models of Species Communities](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc) to study the importance of environmental variables and coral traits on the assembly of coral communities in the NW Atlantic
 
