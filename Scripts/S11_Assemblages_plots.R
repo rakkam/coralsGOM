@@ -131,7 +131,7 @@ TS_graph_blow<-all_dat %>%
   geom_point(colour="gray",size=0.2)+
   theme_light()+
   geom_point(data=myclusters_clim,aes(x=sal_mean,y=theta,colour=zone),size=0.1)+
-  ylab("Temperature")+xlab("Salinity")+
+  ylab(paste("Potential temperature (","\u00B0","C)",sep=""))+xlab("Absolute salinity")+
   scale_colour_manual(values=mypalette)+
   theme(legend.title=element_blank(),
         legend.position="none",
