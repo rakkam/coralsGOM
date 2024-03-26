@@ -86,7 +86,11 @@ paper_metrics<-mymetrics %>%
   dplyr::select(Srich,fric,feve,fdis,fdiv,zone) %>% 
   pivot_longer(cols=!zone,values_to = "value",names_to="metric") %>% 
   mutate(metric=fct_relevel(metric,c("Srich","fric","fdis","feve"))) %>%
-  filter(!metric=="fdiv") %>% 
+  filter(!metric=="fdiv") %>%
+  mutate(metric=recode_factor(metric,Srich="Species richness",
+                              fric="Functional richness",
+                              fdis="Functional dispersion",
+                              feve="Functional evenness")) %>%
   ggplot(aes(x=zone,y=value)) +
   geom_jitter(aes(color=zone), alpha=0.2)+
   geom_boxplot(colour="gray30",alpha=0.4,outlier.shape = NA)+
